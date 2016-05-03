@@ -2639,7 +2639,7 @@ Production Part - 8199
 <wire x1="-20.6" y1="6.25" x2="-27.1" y2="-0.25" width="0.1524" layer="51"/>
 <smd name="P$2" x="-2" y="5" dx="3.81" dy="1.9304" layer="1" thermals="no"/>
 <smd name="P$3" x="1.1" y="3.5" dx="1" dy="1.5" layer="1"/>
-<polygon width="0.1524" layer="1">
+<polygon width="0.254" layer="1">
 <vertex x="0" y="0"/>
 <vertex x="-26.5" y="0"/>
 <vertex x="-20.45" y="6.05" curve="-24.043131"/>
@@ -2704,9 +2704,9 @@ Production Part - 8199
 <library name="NSR1030QMUTAG">
 <packages>
 <package name="NSR1030QMUTAG">
-<smd name="PIN1" x="-0.7" y="-0.865" dx="1.4" dy="1.5" layer="1"/>
-<smd name="P$2" x="-0.70579375" y="0.4525875" dx="1.4" dy="0.85" layer="1"/>
-<smd name="VCC" x="0.738415625" y="-0.365" dx="1.2" dy="2.5" layer="1"/>
+<smd name="PIN1" x="-0.7" y="-0.865" dx="1.35" dy="1.45" layer="1"/>
+<smd name="P$2" x="-0.70579375" y="0.4525875" dx="1.35" dy="0.8" layer="1"/>
+<smd name="VCC" x="0.738415625" y="-0.365" dx="1.15" dy="2.45" layer="1"/>
 <smd name="PIN3" x="0.65" y="1.335" dx="0.55" dy="0.633" layer="1"/>
 <smd name="GND" x="-0.65" y="1.335" dx="0.55" dy="0.633" layer="1"/>
 <wire x1="-0.259490625" y1="1.483696875" x2="0.22835" y2="1.483696875" width="0.127" layer="21"/>
