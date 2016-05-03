@@ -18,12 +18,12 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -782,8 +782,8 @@ design rules under a new name.</description>
 <attribute name="NAME" x="18.01905" y="2.450234375" size="0.4064" layer="25" rot="R180"/>
 <attribute name="VALUE" x="18.14605" y="2.514834375" size="0.4064" layer="27" rot="R180"/>
 </element>
-<element name="ANTENNA1" library="SpriteAntenna" package="ANTENNA" value="ANTENNA" x="30.50825" y="2.435540625" rot="R100"/>
-<element name="ANTENNA2" library="SpriteAntenna" package="ANTENNA" value="ANTENNA" x="32.54651875" y="4.995290625" rot="R170"/>
+<element name="ANT_1" library="SpriteAntenna" package="ANTENNA" value="ANTENNA" x="30.50825" y="2.435540625" rot="R100"/>
+<element name="U$2" library="SpriteAntenna" package="ANTENNA" value="ANTENNA" x="32.54651875" y="4.995290625" rot="R170"/>
 <element name="SUNSENSOR1" library="SparkFun-Sensors" package="ALS-PT19" value="LIGHTSENSORALS" x="14.0361375" y="12.204196875" smashed="yes" rot="R270">
 <attribute name="PROD_ID" value="IC-11836" x="-50.7338625" y="-5.575803125" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="14.524628125" y="14.4278" size="0.4064" layer="25" rot="R270"/>
@@ -826,9 +826,9 @@ design rules under a new name.</description>
 <attribute name="NAME" x="17.0034125" y="12.128596875" size="0.4064" layer="26" rot="MR0"/>
 <attribute name="VALUE" x="16.445665625" y="10.2939375" size="0.4064" layer="28" rot="MR90"/>
 </element>
-<element name="32KHZ" library="SpriteCrystal" package="SPRITECRYSTAL" value="SPRITECRYSTALSPRITECRYSTAL" x="18.51735" y="13.44170625" smashed="yes" rot="R180"/>
-<element name="VCCPIN" library="SpritePin" package="SPRITE_PIN" value="SPRITE_PIN" x="33.870446875" y="24.045378125"/>
-<element name="GNDPIN" library="SpritePin" package="SPRITE_PIN" value="SPRITE_PIN" x="16.21968125" y="33.75911875"/>
+<element name="U$6" library="SpriteCrystal" package="SPRITECRYSTAL" value="SPRITECRYSTALSPRITECRYSTAL" x="18.51735" y="13.44170625" smashed="yes" rot="R180"/>
+<element name="U$7" library="SpritePin" package="SPRITE_PIN" value="SPRITE_PIN" x="33.870446875" y="24.045378125"/>
+<element name="U$8" library="SpritePin" package="SPRITE_PIN" value="SPRITE_PIN" x="16.21968125" y="33.75911875"/>
 <element name="JP3" library="SparkFun" package="1X02" value="" x="30.840184375" y="11.99316875" smashed="yes" rot="R180">
 <attribute name="NAME" x="32.3623375" y="14.383271875" size="0.4064" layer="25" ratio="10" rot="R180"/>
 <attribute name="VALUE" x="32.110184375" y="15.16816875" size="1.27" layer="27" rot="R180"/>
@@ -845,10 +845,10 @@ design rules under a new name.</description>
 <attribute name="NAME" x="9.183565625" y="14.3547625" size="0.4064" layer="21" ratio="10" rot="R180"/>
 <attribute name="VALUE" x="11.59248125" y="14.942165625" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="TRISOL2" library="TriSolX_QzQube" package="TRISOLX-T01" value="TRISOLX-WING" x="30.808259375" y="15.24121875"/>
-<element name="TRISOL1" library="TriSolX_QzQube" package="TRISOLX-T01" value="TRISOLX-WING" x="2.160559375" y="31.99309375" rot="R180"/>
-<element name="TRISOL4" library="TriSolX_QzQube" package="TRISOLX-T01" value="TRISOLX-WING" x="28.025640625" y="33.200775" rot="MR180"/>
-<element name="TRISOL3" library="TriSolX_QzQube" package="TRISOLX-T01" value="TRISOLX-WING" x="2.7041" y="15.4499375" rot="MR0"/>
+<element name="U$11" library="TriSolX_QzQube" package="TRISOLX-T01" value="TRISOLX-WING" x="30.808259375" y="15.24121875"/>
+<element name="U$9" library="TriSolX_QzQube" package="TRISOLX-T01" value="TRISOLX-WING" x="2.160559375" y="31.99309375" rot="R180"/>
+<element name="U$10" library="TriSolX_QzQube" package="TRISOLX-T01" value="TRISOLX-WING" x="28.025640625" y="33.200775" rot="MR180"/>
+<element name="U$12" library="TriSolX_QzQube" package="TRISOLX-T01" value="TRISOLX-WING" x="2.7041" y="15.4499375" rot="MR0"/>
 <element name="RECTIFIER" library="NSR1030QMUTAG" package="NSR1030QMUTAG" value="NSR1030QMUTAG" x="21.35038125" y="8.514034375" smashed="yes" rot="MR180"/>
 <element name="H-BRIDGE" library="lv8417cs" package="LV8417CS" value="LV8417CS" x="21.29055625" y="5.015396875" rot="MR0"/>
 <element name="TXCO" library="SpriteTCXO" package="TXC_7Z" value="" x="26.8777125" y="1.996625" smashed="yes">
@@ -882,7 +882,7 @@ design rules under a new name.</description>
 <contactref element="C10" pad="2"/>
 <contactref element="D1" pad="A"/>
 <contactref element="C7" pad="1"/>
-<contactref element="GNDPIN" pad="PIN"/>
+<contactref element="U$8" pad="PIN"/>
 <contactref element="C13" pad="1"/>
 <contactref element="R7" pad="1"/>
 <wire x1="6.581103125" y1="1.942121875" x2="6.551103125" y2="1.972121875" width="0.254" layer="1"/>
@@ -923,10 +923,10 @@ design rules under a new name.</description>
 <wire x1="8.13048125" y1="9.32119375" x2="8.121240625" y2="7.48471875" width="0.254" layer="16"/>
 <wire x1="8.121240625" y1="7.48471875" x2="4.96175625" y2="7.480721875" width="0.254" layer="16"/>
 <wire x1="4.96175625" y1="7.480721875" x2="4.946403125" y2="8.830228125" width="0.254" layer="16"/>
-<contactref element="TRISOL2" pad="P$3"/>
-<contactref element="TRISOL1" pad="P$3"/>
-<contactref element="TRISOL4" pad="P$3"/>
-<contactref element="TRISOL3" pad="P$3"/>
+<contactref element="U$11" pad="P$3"/>
+<contactref element="U$9" pad="P$3"/>
+<contactref element="U$10" pad="P$3"/>
+<contactref element="U$12" pad="P$3"/>
 <wire x1="6.581103125" y1="2.802121875" x2="7.428" y2="2.802121875" width="0.254" layer="1"/>
 <wire x1="7.428" y1="2.802121875" x2="7.428" y2="2.372121875" width="0.254" layer="1"/>
 <wire x1="7.428" y1="2.372121875" x2="7.418640625" y2="1.193296875" width="0.254" layer="1"/>
@@ -1075,7 +1075,7 @@ design rules under a new name.</description>
 <contactref element="L1" pad="1"/>
 <contactref element="D1" pad="C"/>
 <contactref element="C7" pad="2"/>
-<contactref element="VCCPIN" pad="PIN"/>
+<contactref element="U$7" pad="PIN"/>
 <wire x1="15.30435625" y1="14.79753125" x2="20.9135625" y2="14.7610375" width="0.254" layer="1"/>
 <wire x1="20.9135625" y1="14.7610375" x2="29.78664375" y2="14.7603125" width="0.254" layer="1"/>
 <wire x1="29.78664375" y1="14.7603125" x2="33.65906875" y2="14.759996875" width="0.254" layer="1"/>
@@ -1153,10 +1153,10 @@ design rules under a new name.</description>
 <wire x1="17.842665625" y1="12.2099375" x2="18.837990625" y2="12.18581875" width="0.254" layer="16"/>
 <wire x1="18.837990625" y1="12.18581875" x2="18.836115625" y2="12.171178125" width="0.254" layer="16"/>
 <wire x1="18.836115625" y1="12.171178125" x2="18.846334375" y2="13.162803125" width="0.254" layer="16"/>
-<contactref element="TRISOL2" pad="P$2"/>
-<contactref element="TRISOL1" pad="P$2"/>
-<contactref element="TRISOL4" pad="P$2"/>
-<contactref element="TRISOL3" pad="P$2"/>
+<contactref element="U$11" pad="P$2"/>
+<contactref element="U$9" pad="P$2"/>
+<contactref element="U$10" pad="P$2"/>
+<contactref element="U$12" pad="P$2"/>
 <wire x1="4.160559375" y1="26.99309375" x2="28.808259375" y2="20.24121875" width="0.4064" layer="1"/>
 <wire x1="4.160559375" y1="26.99309375" x2="21.206621875" y2="22.50845" width="0.4064" layer="1"/>
 <wire x1="21.206621875" y1="22.50845" x2="29.78664375" y2="22.50845" width="0.4064" layer="1"/>
@@ -1391,9 +1391,9 @@ design rules under a new name.</description>
 </signal>
 <signal name="ANT1">
 <contactref element="CC430" pad="29"/>
-<contactref element="ANTENNA1" pad="IN1"/>
-<contactref element="ANTENNA1" pad="IN2"/>
-<contactref element="ANTENNA1" pad="IN3"/>
+<contactref element="ANT_1" pad="IN1"/>
+<contactref element="ANT_1" pad="IN2"/>
+<contactref element="ANT_1" pad="IN3"/>
 <wire x1="30.72878125" y1="1.184834375" x2="30.50825" y2="2.435540625" width="0.254" layer="1"/>
 <wire x1="30.50825" y1="2.435540625" x2="30.287715625" y2="3.68624375" width="0.254" layer="1"/>
 <wire x1="30.287715625" y1="3.68624375" x2="30.0798125" y2="3.6380375" width="0.254" layer="1"/>
@@ -1405,9 +1405,9 @@ design rules under a new name.</description>
 </signal>
 <signal name="ANT2">
 <contactref element="CC430" pad="30"/>
-<contactref element="ANTENNA2" pad="IN1"/>
-<contactref element="ANTENNA2" pad="IN2"/>
-<contactref element="ANTENNA2" pad="IN3"/>
+<contactref element="U$2" pad="IN1"/>
+<contactref element="U$2" pad="IN2"/>
+<contactref element="U$2" pad="IN3"/>
 <wire x1="33.797221875" y1="4.77475625" x2="32.54651875" y2="4.995290625" width="0.254" layer="1"/>
 <wire x1="32.54651875" y1="4.995290625" x2="31.2958125" y2="5.215821875" width="0.254" layer="1"/>
 <wire x1="23.702965625" y1="6.718353125" x2="25.51849375" y2="6.72863125" width="0.254" layer="1"/>
@@ -1528,7 +1528,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$7">
 <contactref element="CC430" pad="44"/>
-<contactref element="32KHZ" pad="PIN2"/>
+<contactref element="U$6" pad="PIN2"/>
 <wire x1="17.21735" y1="13.44170625" x2="17.48660625" y2="12.094040625" width="0.254" layer="1"/>
 <wire x1="17.48660625" y1="12.094040625" x2="19.596275" y2="12.094040625" width="0.254" layer="1"/>
 <wire x1="19.596275" y1="12.094040625" x2="19.602796875" y2="10.318353125" width="0.254" layer="1"/>
@@ -1536,7 +1536,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$8">
 <contactref element="CC430" pad="43"/>
-<contactref element="32KHZ" pad="PIN1"/>
+<contactref element="U$6" pad="PIN1"/>
 <wire x1="19.81735" y1="13.44170625" x2="19.946696875" y2="13.282721875" width="0.254" layer="1"/>
 <wire x1="19.946696875" y1="13.282721875" x2="19.92880625" y2="13.230134375" width="0.254" layer="1"/>
 <wire x1="19.92880625" y1="13.230134375" x2="20.06930625" y2="13.37198125" width="0.254" layer="1"/>
