@@ -2943,10 +2943,7 @@ Production Part - 8199
 <part name="GND26" library="SparkFun" deviceset="GND" device=""/>
 <part name="P+17" library="SparkFun" deviceset="VCC" device=""/>
 <part name="JP3" library="SparkFun" deviceset="M02" device="PTH"/>
-<part name="C13" library="SparkFun" deviceset="CAP" device="0805" value="2.2nF"/>
 <part name="R7" library="SparkFun" deviceset="RESISTOR" device="0805-RES" value="56K"/>
-<part name="GND27" library="SparkFun" deviceset="GND" device=""/>
-<part name="GND28" library="SparkFun" deviceset="GND" device=""/>
 <part name="JP1" library="SparkFun" deviceset="M02" device="PTH"/>
 <part name="TRISOL2" library="TriSolX_QzQube" deviceset="TRISOLX-WING" device=""/>
 <part name="P+18" library="SparkFun" deviceset="VCC" device=""/>
@@ -2970,6 +2967,10 @@ Production Part - 8199
 <part name="C11" library="SparkFun" deviceset="CAP" device="0805" value="10nF"/>
 <part name="GND19" library="SparkFun" deviceset="GND" device=""/>
 <part name="P+16" library="SparkFun" deviceset="VCC" device=""/>
+<part name="P+22" library="SparkFun" deviceset="VCC" device=""/>
+<part name="R8" library="SparkFun" deviceset="RESISTOR" device="0805-RES" value="20"/>
+<part name="C12" library="SparkFun" deviceset="CAP" device="0805" value="10uF"/>
+<part name="GND20" library="SparkFun" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3077,10 +3078,7 @@ parallel to the full bridge rectifier circuit.
 <instance part="GND26" gate="1" x="198.12" y="93.98" rot="R180"/>
 <instance part="P+17" gate="1" x="187.96" y="91.44"/>
 <instance part="JP3" gate="G$1" x="205.74" y="43.18" rot="R180"/>
-<instance part="C13" gate="G$1" x="185.42" y="50.8"/>
 <instance part="R7" gate="G$1" x="198.12" y="53.34" rot="R270"/>
-<instance part="GND27" gate="1" x="185.42" y="60.96" rot="R180"/>
-<instance part="GND28" gate="1" x="198.12" y="63.5" rot="R180"/>
 <instance part="JP1" gate="G$1" x="205.74" y="22.86" rot="R180"/>
 <instance part="TRISOL2" gate="G$1" x="307.34" y="99.06" rot="R90"/>
 <instance part="P+18" gate="1" x="307.34" y="127"/>
@@ -3104,6 +3102,10 @@ parallel to the full bridge rectifier circuit.
 <instance part="C11" gate="G$1" x="101.6" y="68.58" rot="R90"/>
 <instance part="GND19" gate="1" x="109.22" y="43.18"/>
 <instance part="P+16" gate="1" x="88.9" y="45.72" rot="R180"/>
+<instance part="P+22" gate="1" x="198.12" y="63.5"/>
+<instance part="R8" gate="G$1" x="347.98" y="205.74" rot="R180"/>
+<instance part="C12" gate="G$1" x="302.26" y="223.52" rot="R90"/>
+<instance part="GND20" gate="1" x="287.02" y="223.52" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -3211,16 +3213,6 @@ parallel to the full bridge rectifier circuit.
 <wire x1="198.12" y1="91.44" x2="198.12" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="GND27" gate="1" pin="GND"/>
-<pinref part="C13" gate="G$1" pin="1"/>
-<wire x1="185.42" y1="58.42" x2="185.42" y2="55.88" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="GND28" gate="1" pin="GND"/>
-<pinref part="R7" gate="G$1" pin="1"/>
-<wire x1="198.12" y1="60.96" x2="198.12" y2="58.42" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="TRISOL2" gate="G$1" pin="A"/>
 <pinref part="GND29" gate="1" pin="GND"/>
 <wire x1="307.34" y1="93.98" x2="307.34" y2="81.28" width="0.1524" layer="91"/>
@@ -3255,6 +3247,11 @@ parallel to the full bridge rectifier circuit.
 <pinref part="GND19" gate="1" pin="GND"/>
 <wire x1="104.14" y1="50.8" x2="109.22" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="50.8" x2="109.22" y2="45.72" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND20" gate="1" pin="GND"/>
+<pinref part="C12" gate="G$1" pin="1"/>
+<wire x1="289.56" y1="223.52" x2="297.18" y2="223.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -3391,12 +3388,21 @@ parallel to the full bridge rectifier circuit.
 <segment>
 <pinref part="P+14" gate="1" pin="VCC"/>
 <pinref part="H-BRIDGE" gate="G$1" pin="VM"/>
-<wire x1="314.96" y1="226.06" x2="314.96" y2="220.98" width="0.1524" layer="91"/>
+<wire x1="314.96" y1="226.06" x2="314.96" y2="223.52" width="0.1524" layer="91"/>
+<pinref part="C12" gate="G$1" pin="2"/>
+<wire x1="314.96" y1="223.52" x2="314.96" y2="220.98" width="0.1524" layer="91"/>
+<wire x1="304.8" y1="223.52" x2="314.96" y2="223.52" width="0.1524" layer="91"/>
+<junction x="314.96" y="223.52"/>
 </segment>
 <segment>
 <pinref part="TXCO" gate="G$1" pin="VCC"/>
 <pinref part="P+16" gate="1" pin="VCC"/>
 <wire x1="88.9" y1="50.8" x2="88.9" y2="45.72" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R7" gate="G$1" pin="1"/>
+<pinref part="P+22" gate="1" pin="VCC"/>
+<wire x1="198.12" y1="63.5" x2="198.12" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -3689,12 +3695,8 @@ parallel to the full bridge rectifier circuit.
 </segment>
 <segment>
 <pinref part="JP3" gate="G$1" pin="1"/>
-<wire x1="198.12" y1="43.18" x2="185.42" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="43.18" x2="180.34" y2="43.18" width="0.1524" layer="91"/>
 <label x="180.34" y="40.64" size="1.778" layer="95"/>
-<pinref part="C13" gate="G$1" pin="2"/>
-<wire x1="185.42" y1="43.18" x2="180.34" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="185.42" y1="48.26" x2="185.42" y2="43.18" width="0.1524" layer="91"/>
-<junction x="185.42" y="43.18"/>
 <pinref part="R7" gate="G$1" pin="2"/>
 <wire x1="198.12" y1="48.26" x2="198.12" y2="43.18" width="0.1524" layer="91"/>
 <junction x="198.12" y="43.18"/>
@@ -3808,8 +3810,8 @@ parallel to the full bridge rectifier circuit.
 <net name="COIL1" class="0">
 <segment>
 <pinref part="H-BRIDGE" gate="G$1" pin="OUT1"/>
-<wire x1="335.28" y1="195.58" x2="340.36" y2="195.58" width="0.1524" layer="91"/>
-<label x="340.36" y="195.58" size="1.778" layer="95" xref="yes"/>
+<wire x1="335.28" y1="195.58" x2="342.9" y2="195.58" width="0.1524" layer="91"/>
+<label x="342.9" y="195.58" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="RECTIFIER" gate="G$1" pin="PIN1"/>
@@ -3817,14 +3819,9 @@ parallel to the full bridge rectifier circuit.
 <label x="347.98" y="160.02" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="RECTIFIER" gate="G$1" pin="PIN3"/>
-<wire x1="302.26" y1="165.1" x2="297.18" y2="165.1" width="0.1524" layer="91"/>
-<label x="297.18" y="167.64" size="1.778" layer="95" rot="R180"/>
-</segment>
-<segment>
-<pinref part="H-BRIDGE" gate="G$1" pin="OUT2"/>
-<wire x1="335.28" y1="205.74" x2="340.36" y2="205.74" width="0.1524" layer="91"/>
-<label x="340.36" y="205.74" size="1.778" layer="95" xref="yes"/>
+<pinref part="R8" gate="G$1" pin="1"/>
+<wire x1="353.06" y1="205.74" x2="358.14" y2="205.74" width="0.1524" layer="91"/>
+<label x="358.14" y="205.74" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -3840,6 +3837,18 @@ parallel to the full bridge rectifier circuit.
 <pinref part="C11" gate="G$1" pin="2"/>
 <pinref part="TXCO" gate="G$1" pin="OUT"/>
 <wire x1="104.14" y1="68.58" x2="104.14" y2="60.96" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="LOADLINE" class="0">
+<segment>
+<pinref part="RECTIFIER" gate="G$1" pin="PIN3"/>
+<wire x1="302.26" y1="165.1" x2="297.18" y2="165.1" width="0.1524" layer="91"/>
+<label x="297.18" y="167.64" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="H-BRIDGE" gate="G$1" pin="OUT2"/>
+<pinref part="R8" gate="G$1" pin="2"/>
+<wire x1="335.28" y1="205.74" x2="342.9" y2="205.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
