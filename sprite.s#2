@@ -2930,7 +2930,7 @@ Production Part - 8199
 <part name="P+12" library="SparkFun" deviceset="VCC" device=""/>
 <part name="C10" library="SparkFun" deviceset="CAP" device="0805" value="470nF"/>
 <part name="GND16" library="SparkFun" deviceset="GND" device=""/>
-<part name="D1" library="SparkFun-DiscreteSemi" deviceset="DIODE-ZENER" device="3.3V" value="2.7V"/>
+<part name="D1" library="SparkFun-DiscreteSemi" deviceset="DIODE-ZENER" device="3.3V" value="2.2V"/>
 <part name="P+11" library="SparkFun" deviceset="VCC" device=""/>
 <part name="GND13" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND21" library="SparkFun" deviceset="GND" device=""/>
@@ -2968,7 +2968,9 @@ Production Part - 8199
 <part name="GND19" library="SparkFun" deviceset="GND" device=""/>
 <part name="P+16" library="SparkFun" deviceset="VCC" device=""/>
 <part name="P+22" library="SparkFun" deviceset="VCC" device=""/>
-<part name="R8" library="SparkFun" deviceset="RESISTOR" device="0805-RES" value="10"/>
+<part name="R8" library="SparkFun" deviceset="RESISTOR" device="0805-RES" value="1K"/>
+<part name="C12" library="SparkFun" deviceset="CAP" device="0805" value="10uF"/>
+<part name="GND20" library="SparkFun" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2995,7 +2997,7 @@ identical to a PanStamp NRG 2, and is programmable
 via SBW or serial. The CC430 connects with the 
 dipole antennae.</text>
 <text x="256.54" y="53.34" size="5.08" layer="97">Power/Attitude Control:</text>
-<text x="269.24" y="33.02" size="1.778" layer="97">The board features two TriSolX solar panels, 
+<text x="269.24" y="33.02" size="1.778" layer="97">The board features four TriSolX solar panels, 
 along with a set of inductive coils and a full bridge 
 rectifier to clamp VCC to a safe voltage. The 
 inductive coils double as torque coils, controlled 
@@ -3102,6 +3104,8 @@ parallel to the full bridge rectifier circuit.
 <instance part="P+16" gate="1" x="88.9" y="45.72" rot="R180"/>
 <instance part="P+22" gate="1" x="198.12" y="63.5"/>
 <instance part="R8" gate="G$1" x="347.98" y="205.74" rot="R180"/>
+<instance part="C12" gate="G$1" x="302.26" y="223.52" rot="R90"/>
+<instance part="GND20" gate="1" x="287.02" y="223.52" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -3244,6 +3248,11 @@ parallel to the full bridge rectifier circuit.
 <wire x1="104.14" y1="50.8" x2="109.22" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="50.8" x2="109.22" y2="45.72" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="GND20" gate="1" pin="GND"/>
+<pinref part="C12" gate="G$1" pin="1"/>
+<wire x1="289.56" y1="223.52" x2="297.18" y2="223.52" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="N$1" class="0">
 <segment>
@@ -3379,7 +3388,11 @@ parallel to the full bridge rectifier circuit.
 <segment>
 <pinref part="P+14" gate="1" pin="VCC"/>
 <pinref part="H-BRIDGE" gate="G$1" pin="VM"/>
-<wire x1="314.96" y1="226.06" x2="314.96" y2="220.98" width="0.1524" layer="91"/>
+<wire x1="314.96" y1="226.06" x2="314.96" y2="223.52" width="0.1524" layer="91"/>
+<pinref part="C12" gate="G$1" pin="2"/>
+<wire x1="314.96" y1="223.52" x2="314.96" y2="220.98" width="0.1524" layer="91"/>
+<wire x1="304.8" y1="223.52" x2="314.96" y2="223.52" width="0.1524" layer="91"/>
+<junction x="314.96" y="223.52"/>
 </segment>
 <segment>
 <pinref part="TXCO" gate="G$1" pin="VCC"/>
