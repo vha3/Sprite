@@ -3,6 +3,8 @@
 
 #### If you write some cool software for your Sprite, do a pull request! 
 
+![alt tag](https://github.com/vha3/Sprite/blob/master/Images/TOP.png)
+
 ##Just Bought a Sprite?
 See the Sprite User's Manual in the main repo above. This document will walk you through software installation and wiring your Sprite for programming. The Demo Software folder contains a number of Arduino sketches that exercise the Sprite's various sensors and actuators. The ReadMe within the Demo Software folder links to the panStamp example sketches folder, which contains a number more example sketches that will work on the Sprite.
 
