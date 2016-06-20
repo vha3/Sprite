@@ -1,3 +1,7 @@
+// Reads ambient light from front/back sensor,
+// turns on LED if light is above threshold,
+// turns off LED if light is below threshold
+
 int val=0;
 int back_sunsensor=13;
 int front_sunsensor=8;
