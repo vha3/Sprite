@@ -1,9 +1,9 @@
 # Sprite Chipsat
 #### You've reached the repository for the Sprite chipsat. The folders above include everything that you need to start using a newly purchased Sprite or to make one of your own. A guide for using the above files is given below.
 
-#### If you write some cool software for your Sprite, do a pull request! 
+#### All necessary prototyping materials for programming the Sprite are included in the Sprite development kit. For those that bought or made a Sprite independently, a DigiKey cart is provided below that includes all necessary materials.
 
-![alt tag](https://github.com/vha3/Sprite/blob/master/Images/TOP.png)
+http://www.digikey.com/short/3z28v7
 
 ##Just Bought a Sprite?
 See the Sprite User's Manual in the main repo above. This document will walk you through software installation and wiring your Sprite for programming. The Demo Software folder contains a number of Arduino sketches that exercise the Sprite's various sensors and actuators. The ReadMe within the Demo Software folder links to the panStamp example sketches folder, which contains a number more example sketches that will work on the Sprite.
