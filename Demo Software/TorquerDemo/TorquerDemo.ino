@@ -12,6 +12,13 @@
     LSM9DS1  more information available here:
     http://www.stmicroelectronics.com.cn/web/catalog/sense_power/FM89/SC1448/SC1448/PF259998
  */
+ 
+ /*
+ Exercises the Sprite torque coils. The coils are commanded to pump
+ current in the positive direction, the negative direction, and are
+ commanded off. For each state, a magnetometer measurement is sent via
+ serial to illustrate the effect of the torque coils.
+ */
 
 #include <Arduino.h>
 #include <Wire.h>
@@ -86,7 +93,6 @@ void loop() {
     y = smeMagnetic.readY();
     z = smeMagnetic.readZ();
 
-//    digitalWrite(enable, HIGH);
     digitalWrite(in2, LOW);
     digitalWrite(in1, HIGH);
 
