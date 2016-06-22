@@ -1,7 +1,7 @@
 # Sprite Chipsat
-#### You've reached the repository for the Sprite chipsat. The folders above include everything that you need to start using a newly purchased Sprite or to make one of your own.
+ You've reached the repository for the Sprite chipsat. The folders above include everything that you need to start using a newly purchased Sprite or to make one of your own.
 
-#### All necessary prototyping materials for programming the Sprite are included in the Sprite development kit. For those that bought or made a Sprite independently, a DigiKey cart is provided below that includes all necessary materials.
+ All necessary prototyping materials for programming the Sprite are included in the Sprite development kit. For those that bought or made a Sprite independently, a DigiKey cart is provided below that includes all necessary materials.
 
 http://www.digikey.com/short/3zwh0t
 
