@@ -11,5 +11,4 @@ See the Sprite User's Manual in the main repo above. This document will walk you
 ##Making Your Own Sprite?
 The above folders contain all of the necessary files and information for having your own Sprite made by a board house. Download this repo, and send a zipped file containing the Gerbers, BOM and CPL, and the images to any board house (request a half-width board, if you intend for it to be used with the Sprite mothership deployer). You may also be interested in downloading the Eagle Cad board and schematic files to customize your own board. Both of these can be found in the Eagle folder.
 
-![alt tag](https://github.com/vha3/Sprite/blob/master/Images/Intrepid_Poster.pdf)
 
