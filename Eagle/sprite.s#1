@@ -2825,7 +2825,6 @@ vha3@cornell.edu</text>
 the coils as the load. The coils are connected in 
 parallel to the full bridge rectifier circuit. 
 </text>
-<text x="157.48" y="91.44" size="1.778" layer="97">THIS IS A TEST</text>
 </plain>
 <instances>
 <instance part="LSM9DS1" gate="G$1" x="88.9" y="213.36"/>
