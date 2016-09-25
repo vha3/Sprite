@@ -2415,36 +2415,6 @@ DIN A3, landscape with location and doc. field</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="SpritePin">
-<packages>
-<package name="SPRITE_PIN">
-<smd name="PIN" x="0" y="0" dx="2.794" dy="2.794" layer="1" roundness="100"/>
-</package>
-</packages>
-<symbols>
-<symbol name="SPRITE_PIN">
-<circle x="0" y="0" radius="2.54" width="0.254" layer="94"/>
-<pin name="P$1" x="0" y="0" length="middle"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="SPRITE_PIN">
-<gates>
-<gate name="G$1" symbol="SPRITE_PIN" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SPRITE_PIN">
-<connects>
-<connect gate="G$1" pin="P$1" pad="PIN"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="TriSolX_QzQube">
 <packages>
 <package name="TRISOLX-T01">
@@ -2685,6 +2655,42 @@ DIN A3, landscape with location and doc. field</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="CR202">
+<packages>
+<package name="CR202">
+<smd name="GND" x="-11.45" y="0" dx="2.5" dy="5.1" layer="1"/>
+<smd name="GND1" x="11.45" y="0" dx="2.5" dy="5.1" layer="1"/>
+<smd name="VCC" x="0" y="0" dx="17.8" dy="17.8" layer="1" roundness="100"/>
+</package>
+</packages>
+<symbols>
+<symbol name="CR202">
+<circle x="0" y="0" radius="14.810615625" width="0.254" layer="94"/>
+<pin name="GND" x="-7.62" y="-17.78" length="middle" rot="R90"/>
+<pin name="GND1" x="7.62" y="-17.78" length="middle" rot="R90"/>
+<pin name="VCC" x="0" y="20.32" length="middle" rot="R270"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="CR202">
+<gates>
+<gate name="G$1" symbol="CR202" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CR202">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="GND1" pad="GND1"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2750,10 +2756,6 @@ DIN A3, landscape with location and doc. field</description>
 <part name="C7" library="SparkFun" deviceset="CAP" device="0805" value="10uF"/>
 <part name="GND22" library="SparkFun" deviceset="GND" device=""/>
 <part name="32KHZ" library="SpriteCrystal" deviceset="SPRITECRYSTAL" device="SPRITECRYSTAL"/>
-<part name="VCCPIN" library="SpritePin" deviceset="SPRITE_PIN" device=""/>
-<part name="GNDPIN" library="SpritePin" deviceset="SPRITE_PIN" device=""/>
-<part name="GND26" library="SparkFun" deviceset="GND" device=""/>
-<part name="P+17" library="SparkFun" deviceset="VCC" device=""/>
 <part name="JP3" library="SparkFun" deviceset="M02" device="PTH"/>
 <part name="R7" library="SparkFun" deviceset="RESISTOR" device="0805-RES" value="56K"/>
 <part name="JP1" library="SparkFun" deviceset="M02" device="PTH"/>
@@ -2763,12 +2765,6 @@ DIN A3, landscape with location and doc. field</description>
 <part name="TRISOL1" library="TriSolX_QzQube" deviceset="TRISOLX-WING" device=""/>
 <part name="P+19" library="SparkFun" deviceset="VCC" device=""/>
 <part name="GND30" library="SparkFun" deviceset="GND" device=""/>
-<part name="TRISOL4" library="TriSolX_QzQube" deviceset="TRISOLX-WING" device=""/>
-<part name="P+20" library="SparkFun" deviceset="VCC" device=""/>
-<part name="GND31" library="SparkFun" deviceset="GND" device=""/>
-<part name="TRISOL3" library="TriSolX_QzQube" deviceset="TRISOLX-WING" device=""/>
-<part name="P+21" library="SparkFun" deviceset="VCC" device=""/>
-<part name="GND32" library="SparkFun" deviceset="GND" device=""/>
 <part name="RECTIFIER" library="NSR1030QMUTAG" deviceset="NSR1030QMUTAG" device=""/>
 <part name="H-BRIDGE" library="lv8417cs" deviceset="LV8417CS" device=""/>
 <part name="GND17" library="SparkFun" deviceset="GND" device=""/>
@@ -2783,6 +2779,10 @@ DIN A3, landscape with location and doc. field</description>
 <part name="R8" library="SparkFun" deviceset="RESISTOR" device="0805-RES" value="1K"/>
 <part name="C12" library="SparkFun" deviceset="CAP" device="0805" value="10uF"/>
 <part name="GND20" library="SparkFun" deviceset="GND" device=""/>
+<part name="U$1" library="CR202" deviceset="CR202" device=""/>
+<part name="P+11" library="SparkFun" deviceset="VCC" device=""/>
+<part name="P+17" library="SparkFun" deviceset="VCC" device=""/>
+<part name="GND13" library="SparkFun" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2809,14 +2809,14 @@ identical to a PanStamp NRG 2, and is programmable
 via SBW or serial. The CC430 connects with the 
 dipole antennae.</text>
 <text x="256.54" y="53.34" size="5.08" layer="97">Power/Attitude Control:</text>
-<text x="269.24" y="33.02" size="1.778" layer="97">The board features four TriSolX solar panels, 
-along with a set of inductive coils and a full bridge 
-rectifier for inductive powering. The 
+<text x="269.24" y="33.02" size="1.778" layer="97">The board features two TriSolX solar panels, 
+along with a CR2032 coin-cell battery and a set
+of inductive coils for inductive powering. The 
 inductive coils double as torque coils, controlled 
 via four of the CC430 pins connected to an 
 H-bridge.</text>
 <text x="38.1" y="38.1" size="2.54" layer="97">Antennae</text>
-<text x="302.26" y="137.16" size="2.54" layer="97">TriSolX Solar Panels</text>
+<text x="292.1" y="137.16" size="2.54" layer="97">TriSolX Solar Panels and CR2032</text>
 <text x="297.18" y="248.92" size="2.54" layer="97">Inductive Powering/Torque Coils</text>
 <text x="292.1" y="7.62" size="2.54" layer="97">Hunter Adams
 vha3@cornell.edu</text>
@@ -2882,10 +2882,6 @@ parallel to the full bridge rectifier circuit.
 <instance part="C7" gate="G$1" x="347.98" y="167.64"/>
 <instance part="GND22" gate="1" x="347.98" y="180.34" rot="R180"/>
 <instance part="32KHZ" gate="G$1" x="132.08" y="116.84" rot="R90"/>
-<instance part="VCCPIN" gate="G$1" x="187.96" y="83.82" rot="R270"/>
-<instance part="GNDPIN" gate="G$1" x="198.12" y="83.82" rot="R270"/>
-<instance part="GND26" gate="1" x="198.12" y="106.68" rot="R180"/>
-<instance part="P+17" gate="1" x="187.96" y="104.14"/>
 <instance part="JP3" gate="G$1" x="205.74" y="43.18" rot="R180"/>
 <instance part="R7" gate="G$1" x="198.12" y="53.34" rot="R270"/>
 <instance part="JP1" gate="G$1" x="205.74" y="22.86" rot="R180"/>
@@ -2895,12 +2891,6 @@ parallel to the full bridge rectifier circuit.
 <instance part="TRISOL1" gate="G$1" x="292.1" y="99.06" rot="R90"/>
 <instance part="P+19" gate="1" x="292.1" y="127"/>
 <instance part="GND30" gate="1" x="292.1" y="78.74"/>
-<instance part="TRISOL4" gate="G$1" x="337.82" y="99.06" rot="R90"/>
-<instance part="P+20" gate="1" x="337.82" y="127"/>
-<instance part="GND31" gate="1" x="337.82" y="78.74"/>
-<instance part="TRISOL3" gate="G$1" x="322.58" y="99.06" rot="R90"/>
-<instance part="P+21" gate="1" x="322.58" y="127"/>
-<instance part="GND32" gate="1" x="322.58" y="78.74"/>
 <instance part="RECTIFIER" gate="G$1" x="330.2" y="162.56" rot="R180"/>
 <instance part="H-BRIDGE" gate="G$1" x="317.5" y="203.2" rot="R270"/>
 <instance part="GND17" gate="1" x="320.04" y="226.06" rot="R180"/>
@@ -2915,6 +2905,10 @@ parallel to the full bridge rectifier circuit.
 <instance part="R8" gate="G$1" x="347.98" y="205.74" rot="R180"/>
 <instance part="C12" gate="G$1" x="302.26" y="223.52" rot="R90"/>
 <instance part="GND20" gate="1" x="287.02" y="223.52" rot="R270"/>
+<instance part="U$1" gate="G$1" x="340.36" y="104.14"/>
+<instance part="P+11" gate="1" x="332.74" y="83.82" rot="R180"/>
+<instance part="P+17" gate="1" x="347.98" y="83.82" rot="R180"/>
+<instance part="GND13" gate="1" x="340.36" y="129.54" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -3012,11 +3006,6 @@ parallel to the full bridge rectifier circuit.
 <wire x1="347.98" y1="177.8" x2="347.98" y2="172.72" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="GND26" gate="1" pin="GND"/>
-<pinref part="GNDPIN" gate="G$1" pin="P$1"/>
-<wire x1="198.12" y1="104.14" x2="198.12" y2="83.82" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="TRISOL2" gate="G$1" pin="A"/>
 <pinref part="GND29" gate="1" pin="GND"/>
 <wire x1="307.34" y1="93.98" x2="307.34" y2="81.28" width="0.1524" layer="91"/>
@@ -3025,16 +3014,6 @@ parallel to the full bridge rectifier circuit.
 <pinref part="TRISOL1" gate="G$1" pin="A"/>
 <pinref part="GND30" gate="1" pin="GND"/>
 <wire x1="292.1" y1="93.98" x2="292.1" y2="81.28" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="TRISOL4" gate="G$1" pin="A"/>
-<pinref part="GND31" gate="1" pin="GND"/>
-<wire x1="337.82" y1="93.98" x2="337.82" y2="81.28" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="TRISOL3" gate="G$1" pin="A"/>
-<pinref part="GND32" gate="1" pin="GND"/>
-<wire x1="322.58" y1="93.98" x2="322.58" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND17" gate="1" pin="GND"/>
@@ -3056,6 +3035,11 @@ parallel to the full bridge rectifier circuit.
 <pinref part="GND20" gate="1" pin="GND"/>
 <pinref part="C12" gate="G$1" pin="1"/>
 <wire x1="289.56" y1="223.52" x2="297.18" y2="223.52" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND13" gate="1" pin="GND"/>
+<pinref part="U$1" gate="G$1" pin="VCC"/>
+<wire x1="340.36" y1="127" x2="340.36" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -3165,16 +3149,6 @@ parallel to the full bridge rectifier circuit.
 <wire x1="292.1" y1="127" x2="292.1" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="P+20" gate="1" pin="VCC"/>
-<pinref part="TRISOL4" gate="G$1" pin="C"/>
-<wire x1="337.82" y1="127" x2="337.82" y2="104.14" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="P+21" gate="1" pin="VCC"/>
-<pinref part="TRISOL3" gate="G$1" pin="C"/>
-<wire x1="322.58" y1="127" x2="322.58" y2="104.14" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="P+13" gate="1" pin="VCC"/>
 <pinref part="H-BRIDGE" gate="G$1" pin="VCC"/>
 <wire x1="325.12" y1="226.06" x2="325.12" y2="220.98" width="0.1524" layer="91"/>
@@ -3199,9 +3173,14 @@ parallel to the full bridge rectifier circuit.
 <wire x1="198.12" y1="63.5" x2="198.12" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
+<pinref part="U$1" gate="G$1" pin="GND1"/>
 <pinref part="P+17" gate="1" pin="VCC"/>
-<pinref part="VCCPIN" gate="G$1" pin="P$1"/>
-<wire x1="187.96" y1="104.14" x2="187.96" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="347.98" y1="86.36" x2="347.98" y2="83.82" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="GND"/>
+<pinref part="P+11" gate="1" pin="VCC"/>
+<wire x1="332.74" y1="86.36" x2="332.74" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
